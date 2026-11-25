@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZimcellStore - Layanan Digital & Top Up</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #0d1117;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            padding: 20px 15px;
+        }
+        .container {
+            max-width: 480px;
+            width: 100%;
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 16px;
+            padding: 25px 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .logo-badge {
+            width: 75px;
+            height: 75px;
+            background: linear-gradient(135deg, #d4af37, #f3e5ab);
+            color: #0d1117;
+            font-size: 36px;
+            font-weight: bold;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 12px;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+        }
+        .header h1 {
+            font-size: 24px;
+            color: #f3e5ab;
+            letter-spacing: 0.5px;
+        }
+        .header p {
+            font-size: 13px;
+            color: #8b949e;
+            margin-top: 5px;
+        }
+        .steps {
+            display: flex;
+            justify-content: space-between;
+            background-color: #0d1117;
+            padding: 12px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            font-size: 12px;
+            text-align: center;
+            border: 1px solid #21262d;
+        }
+        .step-item {
+            flex: 1;
+            color: #c9d1d9;
+        }
+        .step-item span {
+            display: block;
+            color: #d4af37;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+        .section-title {
+            font-size: 15px;
+            color: #f3e5ab;
+            margin-bottom: 12px;
+            border-left: 3px solid #d4af37;
+            padding-left: 10px;
+        }
+        .product-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+        .product-card {
+            background-color: #21262d;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.2s;
+        }
+        .product-card:hover {
+            border-color: #d4af37;
+        }
+        .product-info h3 {
+            font-size: 15px;
+            color: #ffffff;
+            margin-bottom: 4px;
+        }
+        .product-info p {
+            font-size: 12px;
+            color: #8b949e;
+        }
+        .btn-order {
+            background: linear-gradient(135deg, #d4af37, #aa820a);
+            color: #000000;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            padding: 8px 14px;
+            border-radius: 8px;
+            white-space: nowrap;
+        }
+        .btn-order:hover {
+            opacity: 0.9;
+        }
+        .btn-chat-admin {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background-color: #238636;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 14px;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+        .btn-chat-admin:hover {
+            background-color: #2ea043;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 11px;
+            color: #6e7681;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="logo-badge">Z</div>
+        <h1>ZimcellStore</h1>
+        <p>Top Up Game & Layanan Hiburan Digital • Cepat & Aman</p>
+    </div>
+
+    <div class="steps">
+        <div class="step-item"><span>1. Pilih</span>Pilih produk di bawah</div>
+        <div class="step-item"><span>2. Klik Order</span>Otomatis ke WhatsApp</div>
+        <div class="step-item"><span>3. Proses</span>Bayar & pesanan masuk</div>
+    </div>
+
+    <div class="section-title">Daftar Layanan Populer</div>
+    <div class="product-list">
+        
+        <div class="product-card">
+            <div class="product-info">
+                <h3>Voucher Game UC</h3>
+                <p>60 UC / 325 UC / 660 UC (Via ID)</p>
+            </div>
+            <a href="https://wa.me/6282188015677?text=Halo%20ZimcellStore,%20saya%20mau%20order%20Voucher%20UC" class="btn-order" target="_blank">Order</a>
+        </div>
+
+        <div class="product-card">
+            <div class="product-info">
+                <h3>Robux Digital</h3>
+                <p>Mulai 500 Robux • Proses Cepat</p>
+            </div>
+            <a href="https://wa.me/6282188015677?text=Halo%20ZimcellStore,%20saya%20mau%20order%20Robux" class="btn-order" target="_blank">Order</a>
+        </div>
+
+        <div class="product-card">
+            <div class="product-info">
+                <h3>Top Up Game Lainnya</h3>
+                <p>MLBB (WDP), Free Fire, & Lainnya</p>
+            </div>
+            <a href="https://wa.me/6282188015677?text=Halo%20ZimcellStore,%20saya%20mau%20tanya%20harga%20Top%20Up%20Game" class="btn-order" target="_blank">Order</a>
+        </div>
+
+        <div class="product-card">
+            <div class="product-info">
+                <h3>Paket Hiburan UHD 4K</h3>
+                <p>Akses 1 Bulan • Kualitas Jernih</p>
+            </div>
+            <a href="https://wa.me/6282188015677?text=Halo%20ZimcellStore,%20saya%20mau%20order%20Paket%20Hiburan%20UHD%201%20Bulan" class="btn-order" target="_blank">Order</a>
+        </div>
+
+    </div>
+
+    <a href="https://wa.me/6282188015677?text=Halo%20Admin%20ZimcellStore,%20saya%20mau%20lihat%20pricelist%20lengkapnya" class="btn-chat-admin" target="_blank">
+        💬 Chat Admin / Cek Katalog Lengkap
+    </a>
+
+    <div class="footer">
+        &copy; 2026 ZimcellStore. Layanan Terpercaya.
+    </div>
+</div>
+
+</body>
+</html>
